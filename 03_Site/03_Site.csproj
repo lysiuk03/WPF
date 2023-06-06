@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>_03_Site</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resource\1.jpg" />
+    <None Remove="Resource\10.jpg" />
+    <None Remove="Resource\11.jpg" />
+    <None Remove="Resource\12.jpg" />
+    <None Remove="Resource\13.jpg" />
+    <None Remove="Resource\2.jpg" />
+    <None Remove="Resource\3.jpg" />
+    <None Remove="Resource\4.jpg" />
+    <None Remove="Resource\5.jpg" />
+    <None Remove="Resource\6.jpg" />
+    <None Remove="Resource\7.jpg" />
+    <None Remove="Resource\8.jpg" />
+    <None Remove="Resource\9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\10.jpg" />
+    <Resource Include="Resource\11.jpg" />
+    <Resource Include="Resource\12.jpg" />
+    <Resource Include="Resource\13.jpg" />
+    <Resource Include="Resource\2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\3.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resource\4.jpg" />
+    <Resource Include="Resource\5.jpg" />
+    <Resource Include="Resource\6.jpg" />
+    <Resource Include="Resource\7.jpg" />
+    <Resource Include="Resource\8.jpg" />
+    <Resource Include="Resource\9.jpg" />
+  </ItemGroup>
+
+</Project>

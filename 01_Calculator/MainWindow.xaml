@@ -1,0 +1,47 @@
+﻿<Window x:Class="_01_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_01_Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="450" Width="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="Up" IsReadOnly="True" Grid.ColumnSpan="5" Margin="5" FontSize="10"/>
+        <TextBox Name="Down" IsReadOnly="True" Grid.ColumnSpan="5" Grid.Row="1" Margin="5" FontSize="40"/>
+        <Button Click="Button_Click_Del" Grid.Row="2" FontSize="40" Margin="5">CE</Button>
+        <Button Click="Button_Click_Del" Grid.Row="2" Grid.Column="1" FontSize="40" Margin="5">C</Button>
+        <Button Click="Button_Click_Del" Grid.Row="2" Grid.Column="2" FontSize="40" Margin="5">X</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="2" Grid.Column="3" FontSize="40" Margin="5" Grid.ColumnSpan="2">/</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="3" FontSize="40" Margin="5">7</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="3" Grid.Column="1" FontSize="40" Margin="5">8</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="3" Grid.Column="2" FontSize="40" Margin="5">9</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="3" Grid.Column="3" FontSize="40" Margin="5" Grid.ColumnSpan="2">*</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="4" FontSize="40" Margin="5,5,5,5">4</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="4" Grid.Column="1" FontSize="40" Margin="5">5</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="4" Grid.Column="2" FontSize="40" Margin="5">6</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="4" Grid.Column="3" FontSize="40" Margin="5" Grid.ColumnSpan="2">-</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="5" FontSize="40" Margin="5">1</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="5" Grid.Column="1" FontSize="40" Margin="5">2</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="5" Grid.Column="2" FontSize="40" Margin="5">3</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="5" Grid.Column="3" FontSize="40" Margin="5" Grid.ColumnSpan="2">+</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="6" FontSize="40" Margin="5">.</Button>
+        <Button Click="Button_Click_Number_Action" Grid.Row="6" Grid.Column="1" FontSize="40" Margin="5">0</Button>
+        <Button Click="Button_Click_Calculation" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="3" FontSize="40" Margin="5">=</Button>
+    </Grid>
+</Window>
